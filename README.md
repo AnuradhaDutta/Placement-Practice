@@ -1,2 +1,2 @@
 # TCS-NQT-Striver-s-sheet
-All the problems I solve to prepare for my placements are stored here. 
+I have stored my solutions to the TCS-NQT sheet by Striver here.  
