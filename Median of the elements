@@ -1,0 +1,21 @@
+import java.util.*;
+class Main 
+{ public static void main(String [] args)
+{
+    int arr[]={2,5,1,7};
+    Arrays.sort(arr);
+    int n=arr.length;
+    double sum=0;
+    for(int i=0;i<n;i++)
+    {sum+=arr[i];}
+    System.out.println(sum);
+    if(n%2!=0)
+    {System.out.println(arr[n/2]);
+}
+else
+{
+    double avg=(sum/n);
+    System.out.println(avg); 
+}
+}
+}
