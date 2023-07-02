@@ -1,0 +1,24 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String []args)
+    {String str="anuradha";
+    int n=str.length();
+        char ch=str.charAt(0);
+        ch=Character.toUpperCase(ch);
+        char ch1=str.charAt(n-1);
+        ch1=Character.toUpperCase(ch1);
+        
+        String result=""+ch; //append first character
+        for(int i=1;i<n-1;i++)
+        {
+           char ch2=str.charAt(i); 
+           result+=ch2; //append middle characters
+        }
+        result+=ch1; //append last character
+        System.out.print(result);
+    }
+        
+}  
+    
+    
