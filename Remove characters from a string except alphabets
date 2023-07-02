@@ -1,0 +1,23 @@
+import java.util.*;
+class Main 
+{ 
+     public static void main(String []args)
+    {
+        int i=0;
+        String s= "All1 is@ 5good";
+        for(i=0; i<s.length(); i++)
+        {
+            char ch=s.charAt(i);
+            int ascii=ch;
+            if(ascii>=65 && ascii<=90 || ascii>=97 && ascii<=122)
+            {
+                String s1="" +ch;
+                System.out.print(s1);
+            }
+        }
+        
+        
+        
+    }
+    
+    }
