@@ -1,0 +1,22 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String []args)
+    {
+        String str="{x[(a+b)(a-b)]}";
+        for(int i=0;i<str.length();i++)
+        {
+                char ch=str.charAt(i);
+                if(ch!='(' && ch!= ')'&& ch!= '{' && ch!= '}' && ch!= '[' && ch!= ']')
+                {String str1=""+ch;
+                System.out.print(str1);
+        }
+    }
+}
+}
+    
+    
+    
+    
+    
+   
