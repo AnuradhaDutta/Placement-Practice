@@ -1,0 +1,12 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String []args)
+    {
+        String str="Anuradha";
+        StringBuilder str1=new StringBuilder(str);
+        str1.reverse();
+        str=str1.toString();
+        System.out.print(str);
+    }
+}
