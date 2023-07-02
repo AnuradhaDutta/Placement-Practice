@@ -1,0 +1,23 @@
+import java.util.*;
+class Main 
+{ 
+     public static void main(String []args)
+    {
+        int i=0;
+        String s= "All is good";
+        s=s.toLowerCase();
+        for(i=0; i<s.length(); i++)
+        {
+            char ch=s.charAt(i);
+            if(s.charAt(i)!=' ')
+            {
+                String s1="" +ch;
+                System.out.print(s1);
+            }
+        }
+        
+        
+        
+    }
+    
+    }
