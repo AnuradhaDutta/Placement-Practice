@@ -1,0 +1,42 @@
+import java.util.*;
+class Main 
+{
+    static void Vowels(int i, String s,int temp, int count)
+    {
+        s=s.toLowerCase();
+        for(i=0; i<s.length(); i++)
+        
+        {
+        if(s.charAt(i)=='a'||s.charAt(i)=='e'||s.charAt(i)=='i'||s.charAt(i)=='o'||s.charAt(i)=='u')
+        temp=temp+1;
+        else{
+         count=count+1;
+        }
+        }
+        System.out.println("Vowels=" +temp);
+        System.out.println("Consonents=" +count);
+        
+    }
+    
+    static void Spaces(int i, String s, int space)
+    {
+        for(i=0;i<s.length();i++)
+        {if(s.charAt(i)==' ')
+        space=space+1;
+        
+    }
+    System.out.println("Spaces=" +space);
+    }
+    
+    public static void main(String []args)
+    {
+        int i=0;
+        String s="All Is good";
+        int temp=0;
+        int count=0;
+        int space=0;
+        Vowels(i,s,temp,count);
+        Spaces(i,s,space);
+    }
+}
+
