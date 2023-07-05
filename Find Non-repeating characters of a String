@@ -1,0 +1,27 @@
+import java.util.*;
+
+class Main {
+    static void frequency(String str) {
+        char arr[] = str.toCharArray();
+        Arrays.sort(arr);
+
+        int i = 0;
+        while (i < arr.length) {
+            // Check if the current character is equal to the next character
+            if (i == arr.length - 1 || arr[i] != arr[i + 1]) {
+                System.out.print(arr[i] + " ");
+            } else {
+                // Skip all repeated occurrences of the current character
+                while (i < arr.length - 1 && arr[i] == arr[i + 1]) {
+                    i++;
+                }
+            }
+            i++;
+        }
+    }
+
+    public static void main(String[] args) {
+        String str = "bbaccde";
+        frequency(str);
+    }
+}
