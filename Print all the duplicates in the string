@@ -1,0 +1,25 @@
+import java.util.*;
+class Main
+{
+    static void Duplicate(String str)
+    {
+        char arr[]=str.toCharArray();
+        Arrays.sort(arr);
+        int i=0;
+        int count=1;
+        while(i<arr.length-1)
+        {
+            if(arr[i]==arr[i+1])
+            {
+                System.out.println(arr[i]+" "+count);
+            }
+            count++;
+        i++;
+    }
+    }
+    public static void main(String []args)
+    {
+        String str="aabcdeeffggh";
+        Duplicate(str);
+    }
+}
