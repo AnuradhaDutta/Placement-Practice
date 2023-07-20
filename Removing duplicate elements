@@ -1,0 +1,31 @@
+import java.util.*;
+class Main 
+{
+    static void Duplicates(String str)
+    {
+        char arr[]=str.toCharArray();
+        Arrays.sort(arr);
+        int i=0;
+        int count=0;
+        while(i<arr.length)
+        {
+        if(i==arr.length-1||arr[i]!=arr[i+1])
+        {
+            System.out.print(arr[i]+"");
+        }
+        else
+        {while(arr[i]==arr[i+1])
+        {
+            i++;
+    }
+    }
+    i++;
+    }
+    }
+
+    public static void main(String []args)
+    {
+        String str="aabbbccdeefggh";
+        Duplicates(str);
+    }
+}
