@@ -1,0 +1,31 @@
+import java.util.*;
+
+class Main {
+    static void Frequency(String str) {
+        List<Character> maxFreqChars = new ArrayList<>();
+        int maxfreq = 0;
+        int count[] = new int[256];
+
+        for (int i = 0; i < str.length(); i++) {
+            char currentChar = str.charAt(i);
+            count[currentChar]++;
+            if (count[currentChar] > maxfreq) {
+                maxfreq = count[currentChar];
+                maxFreqChars.clear();
+                maxFreqChars.add(currentChar);
+            } else if (count[currentChar] == maxfreq) {
+                maxFreqChars.add(currentChar);
+            }
+        }
+
+        System.out.println("Characters with maximum frequency:");
+        for (char c : maxFreqChars) {
+            System.out.print(c + " ");
+        }
+    }
+
+    public static void main(String[] args) {
+        String str = "toothpick";
+        Frequency(str);
+    }
+}
