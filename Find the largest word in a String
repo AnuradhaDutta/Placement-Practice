@@ -1,0 +1,24 @@
+import java.util.*;
+class Main 
+{
+    static void largest(String str)
+    {
+        String []substrings = str.split(" ");
+        String longest="";
+        for(String substring : substrings)
+        {
+            if(substring.length()>longest.length())
+            {
+                longest = substring;
+            }
+        }
+            System.out.print(longest);
+       
+        
+    }
+    public static void main(String []args)
+    {
+       String str =  "Google doc";
+       largest(str);
+    }
+}
