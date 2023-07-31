@@ -1,0 +1,16 @@
+import java.util.*;
+class Main 
+{
+ public static void main(String []args)
+ {
+   String str = "I am here";  
+   count(str);
+ }
+ 
+ static void count(String str)
+ {
+  String [] substrings = str.split(" ");
+  
+    System.out.println(substrings.length);     
+ }
+ }
