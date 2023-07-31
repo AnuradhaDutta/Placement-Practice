@@ -1,0 +1,16 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String []args)
+    {
+     String str="tree";
+     sort(str);
+    }
+    
+    static void sort(String str)
+    {
+        char [] arr=str.toCharArray();
+        Arrays.sort(arr);
+        System.out.print(String.valueOf(arr));
+    }
+}
