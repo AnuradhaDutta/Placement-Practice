@@ -1,0 +1,39 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String []args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int m=sc.nextInt();
+        palindrome(n,m);
+        
+    }
+    static void palindrome(int n, int m)
+    {
+        int i=0;
+        for(i=n;i<(m+1);i++)
+        {
+            if(isPalindrome(i))
+            {System.out.println(i);
+            }
+        }
+        
+    }
+    static boolean isPalindrome(int num)
+    {
+        int temp=num;
+        int reversed=0;
+        while(num>0)
+        {
+        int digit=num%10;
+        reversed=reversed*10+digit;
+        num=num/10;
+        }
+        
+        return reversed==temp;
+        
+            
+    }
+    
+}
