@@ -1,0 +1,26 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String []args)
+    {
+        int x=121;
+        int temp=x;
+        int y=0;
+        while(x>0)
+        {
+            int digit=x%10; //extract the digit from the end
+            y=y*10+digit; //appending
+            x=x/10;
+        }
+        if (y==temp)
+        {
+            System.out.print("Yes Palindrome");
+        }
+        else
+        {
+            System.out.print("Not Palindrome");
+        }
+    }
+    
+    
+}
