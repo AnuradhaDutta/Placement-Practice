@@ -1,0 +1,23 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int r= sc.nextInt();
+        int a= (n-r);
+        int factorial = 1;
+        int den=1;
+        for(int i=1; i<=n; i++)
+        {
+            factorial *= i;
+        }
+        for(int j=1; j <=a; j++)
+        {
+            den*=j;
+        }
+        int result = (factorial/den);
+        System.out.println(den);
+        System.out.println(result);
+    }
+}
