@@ -1,0 +1,33 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int firstNum = sc.nextInt();
+        int secondNum = sc.nextInt();
+        int thirdNum = sc.nextInt();
+        int fourthNum = sc.nextInt();
+        
+        // Calculate GCD of secondNum and fourthNum
+        int gcd = findGCD(secondNum, fourthNum);
+        
+        // Calculate LCM of secondNum and fourthNum
+        int lcm = (secondNum * fourthNum) / gcd;
+        
+        // Calculate the numerator and denominator
+        int numerator = (firstNum * lcm / secondNum) + (thirdNum * lcm / fourthNum);
+        
+        int denominator = lcm;
+        
+        System.out.println(numerator + "/" + denominator);
+    }
+    
+    // Method to find the GCD of two numbers using Euclidean algorithm
+    static int findGCD(int a, int b) {
+        if (b == 0) {
+            return a;
+        } else {
+            return findGCD(b, a % b);
+        }
+    }
+}
