@@ -1,0 +1,28 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+            Harshad(num);
+    }
+        static void Harshad(int num)
+    {
+        int sum=0;
+        int OGnum = num;
+        while(num!=0)
+        {
+        int digit=num%10;
+        sum += digit;
+        num = num/10;
+        }
+        if(OGnum%sum==0)
+        {
+            System.out.println("YES");
+        }
+        else
+        {
+            System.out.println("NO");
+        }
+    }
+}
