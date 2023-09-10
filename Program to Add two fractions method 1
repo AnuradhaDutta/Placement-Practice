@@ -1,0 +1,20 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int firstNum = sc.nextInt();
+        int secondNum = sc.nextInt();
+        int thirdNum = sc.nextInt();
+        int fourthNum = sc.nextInt();
+        
+        firstNum = firstNum*fourthNum;
+        thirdNum = secondNum*thirdNum;
+        fourthNum = secondNum*fourthNum;
+        
+        int result1 = firstNum + thirdNum;
+        int result2 = fourthNum;
+        
+        System.out.println(result1 + "/"+ result2);
+    }
+}
