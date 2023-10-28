@@ -1,0 +1,37 @@
+import java.util.*;
+class Main{
+public static void main(String []args)
+{
+   Scanner sc=new Scanner(System.in);
+   int r=sc.nextInt();
+   int unit=sc.nextInt();
+   int n=sc.nextInt();
+   int arr[]=new int[n];
+   int sum=0;
+  for(int i=0;i<n;i++)
+  {
+    arr[i] = sc.nextInt();
+  sum+=arr[i];
+  }
+   Rat(r,unit,arr,n, sum);
+   
+}
+
+static void Rat(int r, int unit, int arr[], int n, int sum)
+{
+  
+  if(r*unit<=sum)
+  {
+     System.out.println("Enough");
+  }
+  else if(r*unit>sum)
+  {
+      System.out.println("0");
+  }
+  else if(arr==null)
+  {
+      System.out.println("-1");
+  }
+  else{System.out.println("Error");}
+}
+}
